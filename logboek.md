@@ -7,3 +7,4 @@
 | 23/10/2020   | 3 Uren          | Create a react pwa app https://www.youtube.com/watch?v=IaJqMcOMuDM&ab_channel=JavaScriptMastery|
 | 27/10/2020   | 7 Uren          | Create a react pwa app, Create a Next.js App https://nextjs.org/learn/basics/create-nextjs-app, Firebase Login React https://github.com/vercel/next.js/tree/canary/examples/with-firebase-authentication |
 | 30/10/2020   | 3 Uren          | Next.js: auth + pwa, volgende keer niet werken met next.js |
+| 07/11/2020   | 6 Uren          | Backend |
