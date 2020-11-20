@@ -8,3 +8,7 @@
 | 27/10/2020   | 7 Uren          | Create a react pwa app, Create a Next.js App https://nextjs.org/learn/basics/create-nextjs-app, Firebase Login React https://github.com/vercel/next.js/tree/canary/examples/with-firebase-authentication |
 | 30/10/2020   | 3 Uren          | Next.js: auth + pwa, volgende keer niet werken met next.js |
 | 07/11/2020   | 6 Uren          | Backend |
+| 13/11/2020   | 3 Uren          | FrontEnd Local |
+| 16/11/2020   | 2 Uren          | Error Online Cloud Functions can't connect |
+| 19/11/2020   | 3 Uren          | Nieuw Project eerst frontend daarna connectie maken met de server/firebase |
+| 20/11/2020   | 2,5 Uren        | Nieuw Project eerst frontend daarna connectie maken met de server/firebase Part 2 |
