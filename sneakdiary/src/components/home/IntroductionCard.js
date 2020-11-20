@@ -3,7 +3,7 @@ const IntroductionCard = () => {
                 
                     <div className="card">
                         <div className="card-image">
-                            <img src="http://wallpapers.net/web/wallpapers/blue-sneakers-hd-wallpaper/5120x2160.jpg"></img>
+                            <img src="http://wallpapers.net/web/wallpapers/blue-sneakers-hd-wallpaper/5120x2160.jpg" alt="Introduction Wallpaper"></img>
                             <span className="card-title">SneakDiary</span>
                         </div>
                         <div className="card-content">
