@@ -12,3 +12,4 @@
 | 16/11/2020   | 2 Uren          | Error Online Cloud Functions can't connect |
 | 19/11/2020   | 3 Uren          | Nieuw Project eerst frontend daarna connectie maken met de server/firebase |
 | 20/11/2020   | 2,5 Uren        | Nieuw Project eerst frontend daarna connectie maken met de server/firebase Part 2 |
+1
