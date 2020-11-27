@@ -6,7 +6,8 @@ import MyCollection from "./components/mycollections/MyCollection";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import CreateMyCollections from "./components/mycollections/CreateMyCollections"
-
+import MyCollectionsDetails from "./components/mycollections/MyCollectionsDetails"
+import './index.css'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/releases/:id" component={ReleasesDetails} />
 
           <Route path="/mycollections" component={MyCollection} />
+          <Route path="/mycollection/:id" component={MyCollectionsDetails} />
           <Route path="/createcollection" component={CreateMyCollections} />
 
           <Route path ="/signin" component={SignIn} />

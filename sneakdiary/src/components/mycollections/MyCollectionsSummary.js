@@ -5,7 +5,7 @@ const MyCollectionsSummary = () => {
         <div class="card-image">
           <img
             class="responsive-img"
-            src="/img/sneaker-questionmark.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Icon-round-Question_mark.jpg"
             alt="sneaker"
           ></img>
         </div>
