@@ -1,11 +1,11 @@
 const MyCollectionsSummary = () => {
   return (
     <div className="col s12 m6">
-      <div className="card horizontal releases-summary">
+      <div className="card horizontal mycollections-summary">
         <div class="card-image">
           <img
             class="responsive-img"
-            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Icon-round-Question_mark.jpg"
+            src="/img/sneaker-questionmark.jpg"
             alt="sneaker"
           ></img>
         </div>

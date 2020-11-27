@@ -6,7 +6,7 @@ const ReleasesDetails = (props) => {
         <div class="card-image">
           <img
             class="responsive-img"
-            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Icon-round-Question_mark.jpg"
+            src="/img/sneaker-questionmark.jpg"
             alt="sneaker"
           ></img>
         </div>
