@@ -9,9 +9,14 @@ const initState = {
 const mycollectionsReducer = (state = initState, action) => {
   switch (action.type) {
     case 'CREATE_MYCOLLECTIONS':
-      console.log('create my collection', action.mycollection);
+      console.log('created my collection', action.mycollection);
+      return state;
+    case 'CREATE_MYCOLLECTIONS_ERROR':
+      console.log('created my collection error', action.err);
+      return state;
+    default:
+      return state;
   }
-  return state;
 };
 
 export default mycollectionsReducer;
