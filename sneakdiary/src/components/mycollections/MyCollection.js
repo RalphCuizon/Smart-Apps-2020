@@ -1,10 +1,15 @@
-import MyCollectionsList from "./MyCollectionsList";
+import MyCollectionsList from './MyCollectionsList'
+import { connect} from 'react-redux'
+import React, { Component } from 'react'
 
-function MyCollection() {
+class MyCollection extends Component {
+  render(){
+  //console.log(this.props);
+  const { mycollections } = this.props;
   return (
     <div className="mycollection container">
       <div className="row">
-        <MyCollectionsList />
+        <MyCollectionsList mycollections={mycollections}/>
         <div>
           <a
             class="btn-floating btn-large waves-effect waves-light light-blue lighten-2"
@@ -17,4 +22,11 @@ function MyCollection() {
     </div>
   );
 }
-export default MyCollection;
+}
+
+const mapStateToProps = (state) => {
+  return {
+    mycollections: state.mycollection.mycollections
+  }
+}
+export default connect(mapStateToProps)(MyCollection);

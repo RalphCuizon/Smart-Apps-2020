@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect} from 'react-redux'
+import { createMyCollections} from '../../store/actions/myCollectionsActions'
+import MyCollection from './MyCollection'
 
 class CreateMyCollections extends Component {
   state = {
@@ -17,7 +20,8 @@ class CreateMyCollections extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
+    //console.log(this.state);
+    this.props.createMyCollections(this.state)
   }
   render() {
     return (
@@ -58,4 +62,10 @@ class CreateMyCollections extends Component {
   }
 }
 
-export default CreateMyCollections
+const mapDispatchToProps = dispatch => {
+  return {
+    createMyCollections: (mycollection) => dispatch(createMyCollections(mycollection))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(CreateMyCollections)

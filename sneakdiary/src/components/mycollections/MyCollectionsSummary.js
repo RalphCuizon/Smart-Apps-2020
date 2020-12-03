@@ -1,4 +1,4 @@
-const MyCollectionsSummary = () => {
+const MyCollectionsSummary = ({mycollection}) => {
   return (
     <div className="col s12 m6">
       <div className="card horizontal mycollections-summary">
@@ -11,9 +11,9 @@ const MyCollectionsSummary = () => {
         </div>
         <div class="card-stacked">
           <div className="card-content blue-grey-text text-darken-3">
-            <span className="card-title">Sneaker 1</span>
+            <span className="card-title">{mycollection.sneakerName}</span>
             <p>Size: 43</p>
-            <p>Date of Purchase: 19/09/2018</p>
+            <p>Date of Purchase: {mycollection.dateOfPurchase}</p>
             <p>Purchase Price: 190€</p>
             <p>Selling Price: 300€</p>
           </div>

@@ -1,12 +1,13 @@
 import MyCollectionsSummary from './MyCollectionsSummary'
 
-const MyCollectionsList = () => { 
+const MyCollectionsList = ({mycollections}) => { 
   return (
     <div className="releases-list section">
-      <MyCollectionsSummary />
-      <MyCollectionsSummary />
-      <MyCollectionsSummary />
-      <MyCollectionsSummary />
+     { mycollections && mycollections.map(mycollection => {
+        return (
+          <MyCollectionsSummary mycollection={mycollection} key={mycollection.id} />
+        )
+      })}  
     </div>
   );
 };
