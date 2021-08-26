@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect} from 'react-redux'
 import { createMyCollections} from '../../store/actions/myCollectionsActions'
-import MyCollection from './MyCollection'
+
 
 class CreateMyCollections extends Component {
   state = {

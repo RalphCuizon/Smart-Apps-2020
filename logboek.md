@@ -15,3 +15,4 @@
 | 27/11/2020   | 2,5 Uren        | Nieuw Project eerst frontend daarna connectie maken met de server/firebase Part 3 |
 | 3/12/2020   | 2 Uren        | Dummy data Redux |
 | 3/12/2020   | 2 Uren        | Firestore action createMyCollection data |
+|26/08/2021| 4 Uren| Herhaling|
