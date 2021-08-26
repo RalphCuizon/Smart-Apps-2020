@@ -1,6 +1,8 @@
 import MyCollectionsList from './MyCollectionsList'
 import { connect} from 'react-redux'
 import React, { Component } from 'react'
+import { firestoreConnect} from 'react-redux-firebase'
+import { compose } from 'redux'
 
 class MyCollection extends Component {
   render(){
@@ -25,8 +27,15 @@ class MyCollection extends Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log(state);
   return {
-    mycollections: state.mycollection.mycollections
+      mycollections: state.firestore.ordered.mycollections
+    
   }
 }
-export default connect(mapStateToProps)(MyCollection);
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'mycollections'}
+  ])
+)(MyCollection);

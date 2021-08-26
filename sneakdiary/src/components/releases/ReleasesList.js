@@ -1,12 +1,13 @@
 import ReleasesSummary from "./ReleasesSummary";
 
-const ReleasesList = () => {
+const ReleasesList = ({releases}) => {
   return (
     <div className="releases-list section">
-      <ReleasesSummary />
-      <ReleasesSummary />
-      <ReleasesSummary />
-      <ReleasesSummary />
+         { releases && releases.map(release => {
+        return (
+          <ReleasesSummary release={release} key={release.id} />
+        )
+      })}  
     </div>
   );
 };

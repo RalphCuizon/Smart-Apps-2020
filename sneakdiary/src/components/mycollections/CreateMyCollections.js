@@ -7,9 +7,9 @@ class CreateMyCollections extends Component {
   state = {
     sneakerName: "",
     dateOfPurchase: "",
-    purchasePrice: "",
-    size: "",
-    sellingPrice: "",
+    purchasePrice: 0,
+    size: 0,
+    sellingPrice: 0,
     image: "",
     soldPrice: ""
   }
@@ -20,7 +20,7 @@ class CreateMyCollections extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    //console.log(this.state);
+    console.log(this.state);
     this.props.createMyCollections(this.state)
   }
   render() {

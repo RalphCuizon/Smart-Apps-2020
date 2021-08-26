@@ -1,4 +1,7 @@
-const ReleasesSummary = () => {
+import React from 'react'
+import moment from 'moment'
+
+const ReleasesSummary = ({release}) => {
     return (
         <div className="card horizontal releases-summary">
           <div class="card-image">
@@ -9,10 +12,10 @@ const ReleasesSummary = () => {
             ></img>
           </div>
           <div className="card-content blue-grey-text text-darken-3">
-            <span className="card-title">Sneaker 1</span>
-            <p>INFO</p>
-            <p>20/12/20</p>
-            <p>190€</p>
+            <span className="card-title">{release.sneakerTitle}</span>
+            <p><b>Info</b>: {release.sneakerInfo}</p>
+            <p><b>Release Date</b>: {moment(release.releaseDate.toDate()).format('L')}</p>
+            <p><b>Price</b>: {release.price} €</p>
           </div>
         </div>
     )
