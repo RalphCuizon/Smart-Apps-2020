@@ -30,6 +30,8 @@ const mapStateToProps = (state) => {
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([
-    { collection: 'releases'}
+    { collection: 'releases',
+    orderBy: ['releaseDate', 'asc'],
+  }
   ])
 )(Home);
