@@ -3,11 +3,14 @@ import { connect} from 'react-redux'
 import React, { Component } from 'react'
 import { firestoreConnect} from 'react-redux-firebase'
 import { compose } from 'redux'
+import { Redirect } from 'react-router-dom'
 
 class MyCollection extends Component {
   render(){
   //console.log(this.props);
-  const { mycollections } = this.props;
+  const { mycollections, auth } = this.props;
+
+  if (!auth.uid) return <Redirect to='/SignIn' />
   return (
     <div className="mycollection container">
       <div className="row">
@@ -29,7 +32,8 @@ class MyCollection extends Component {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
-      mycollections: state.firestore.ordered.mycollections
+      mycollections: state.firestore.ordered.mycollections,
+      auth: state.firebase.auth
     
   }
 }

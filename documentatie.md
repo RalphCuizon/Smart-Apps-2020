@@ -5,3 +5,4 @@
 |Datum formatteren via moment|https://momentjs.com/|
 |firestoreconnect orderby|https://stackoverflow.com/questions/62378557/let-the-user-to-choose-the-type-of-sorting-using-firebase-reactjs|
 |Login gelinkt aan de firebase|https://www.youtube.com/watch?v=TGQi4LgoRRw&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3&index=21|
+|Route Guarding|https://www.youtube.com/watch?v=xY_27UI2W5U&t=127s|

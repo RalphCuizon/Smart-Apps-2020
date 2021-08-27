@@ -1,11 +1,13 @@
 import "./styles.css"
 import { connect } from "react-redux"
 import { firestoreConnect } from "react-redux-firebase"
-import { compose } from "redux";
-import moment from "moment";
+import { compose } from "redux"
+import moment from "moment"
+import { Redirect } from 'react-router-dom'
 
 const MyCollectionsDetails = (props) => {
-    const { mycollection } = props
+    const { mycollection, auth } = props
+    if (!auth.uid) return <Redirect to='/Signin'></Redirect>
     if (mycollection) {
       return (
       <div class="row">
@@ -49,7 +51,8 @@ const mapStateToProps = (state, ownProps) => {
   const mycollections = state.firestore.data.mycollections
   const mycollection = mycollections ? mycollections[id] : null
   return {
-    mycollection : mycollection
+    mycollection : mycollection,
+    auth: state.firebase.auth
   }
 }
 
