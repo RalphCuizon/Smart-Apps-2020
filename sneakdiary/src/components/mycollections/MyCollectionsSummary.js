@@ -20,10 +20,6 @@ const MyCollectionsSummary = ({mycollection}) => {
             <p><b>Selling Price</b>: {mycollection.sellingPrice} €</p>
             <p><b>Sold Price</b>: {mycollection.soldPrice} €</p>
           </div>
-          <div class="card-action">
-            <a href="#">Update</a>
-            <a href="#">Delete</a>
-          </div>
         </div>
       </div>
     </div>

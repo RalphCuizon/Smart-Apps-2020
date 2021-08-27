@@ -1,31 +1,61 @@
+import "./styles.css"
+import { connect } from "react-redux"
+import { firestoreConnect } from "react-redux-firebase"
+import { compose } from "redux";
+import moment from "moment";
+
 const MyCollectionsDetails = (props) => {
-    const id = props.match.params.id;
-  return (
-    <div className="container section mycollections-details">
-      <div className="card horizontal z-depth-0">
+    const { mycollection } = props
+    if (mycollection) {
+      return (
+      <div class="row">
+      <div class="col s12 m2 l2"></div>
+      <div class="col s12 m8 l8">
+    <div class="card horizontal mycollections-details">
       <div class="card-image">
-          <img
-            class="responsive-img"
-            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Icon-round-Question_mark.jpg"
-            alt="sneaker"
-          ></img>
-        </div>
-        <div class="card-stacked">
-          <div className="card-content blue-grey-text text-darken-3">
-            <span className="card-title">Sneaker 1</span>
-            <p>Size: 43</p>
-            <p>Date of Purchase: 19/09/2018</p>
-            <p>Purchase Price: 190€</p>
-            <p>Selling Price: 300€</p>
+        <img  alt="sneaker" classname="mycollectionsdetailsphoto" src="https://pixabay.com/get/gaded274c88c16560ad3e42eaaea106ccf88c84784bc740c714be18fed31da857757bd96a332474cdecd181fc4fcf3834_640.png"/>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content blue-grey-text text-darken-3">
+        <span className="card-title">{mycollection.sneakerName}</span>
+            <p><b>Size</b>: {mycollection.size}</p>
+            <p><b>Date of Purchase</b>: {moment(mycollection.dateOfPurchase).format('L')}</p>
+            <p><b>Purchase Price</b>: {mycollection.purchasePrice} €</p>
+            <p><b>Selling Price</b>: {mycollection.sellingPrice} €</p>
+            <p><b>Sold Price</b>: {mycollection.soldPrice} €</p>
           </div>
           <div class="card-action">
             <a href="#">Update</a>
             <a href="#">Delete</a>
           </div>
-        </div>
       </div>
     </div>
-  );
-};
+  </div>
+  <div class="col s12 m2 l2"></div>
+  </div>)
+    } else {
+      return (
+          <div className="container center">
+            <p>Loading collection...</p>
+          </div>
+        )
+    }
+    console.log(props);
+ 
+}
 
-export default MyCollectionsDetails;
+const mapStateToProps = (state, ownProps) => {
+  const id = ownProps.match.params.id
+  const mycollections = state.firestore.data.mycollections
+  const mycollection = mycollections ? mycollections[id] : null
+  return {
+    mycollection : mycollection
+  }
+}
+
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect ([
+    {collection: 'mycollections'}
+  ])
+)(MyCollectionsDetails)

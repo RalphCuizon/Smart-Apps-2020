@@ -17,3 +17,4 @@
 | 3/12/2020   | 2 Uren        | Firestore action createMyCollection data |
 |26/08/2021| 4 Uren| Herhaling|
 |26/08/2021| 3 Uren| Data van firebase op app zetten + Datum formateren via moment|
+|27/08/2021| 5 Uren|Login gelinkt aan de firebase|

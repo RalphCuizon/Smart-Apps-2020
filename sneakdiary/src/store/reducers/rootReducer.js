@@ -7,7 +7,8 @@ import { firestoreReducer } from 'redux-firestore'
 const rootReducer = combineReducers({
     auth: authReducer,
     mycollection: mycollectionsReducer,
-    firestore: firestoreReducer
+    firestore: firestoreReducer,
+    firebase: firebaseReducer
 })
 
 export default rootReducer

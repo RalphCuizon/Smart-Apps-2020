@@ -8,7 +8,7 @@ import rootReducer from "./store/reducers/rootReducer";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import { reduxFirestore, getFirestore, createFirestoreInstance } from "redux-firestore";
-import { ReactReduxFirebaseProvider, getFirebase } from "react-redux-firebase";
+import { reactReduxFirebase, ReactReduxFirebaseProvider, getFirebase } from "react-redux-firebase";
 import fbConfig from "./config/fbConfig";
 import firebase from 'firebase/app'
 
@@ -33,6 +33,8 @@ const rrfProps = {
   createFirestoreInstance
 };
 
+
+
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
@@ -48,3 +50,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
