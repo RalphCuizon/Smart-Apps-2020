@@ -19,3 +19,4 @@
 |26/08/2021| 3 Uren| Data van firebase op app zetten + Datum formateren via moment|
 |27/08/2021| 5 Uren|Login gelinkt aan de firebase|
 |27/08/2021| 1 Uren|Route Guarding|
+|27/08/2021| 1 Uren|Registratie Gebruiker + database|
