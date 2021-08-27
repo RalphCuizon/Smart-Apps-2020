@@ -8,9 +8,9 @@ import { Redirect } from 'react-router-dom'
 class MyCollection extends Component {
   render(){
   //console.log(this.props);
-  const { mycollections, auth } = this.props;
+  const { mycollections } = this.props;
 
-  if (!auth.uid) return <Redirect to='/SignIn' />
+ // if (!auth.uid) return <Redirect to='/SignIn' />
   return (
     <div className="mycollection container">
       <div className="row">
@@ -31,15 +31,21 @@ class MyCollection extends Component {
 
 const mapStateToProps = (state) => {
   console.log(state);
+  console.log(state.firebase.auth.uid)
   return {
       mycollections: state.firestore.ordered.mycollections,
-      auth: state.firebase.auth
+      //auth: state.firebase.auth,
+      userId: state.firebase.auth.uid
     
   }
 }
 export default compose(
   connect(mapStateToProps),
-  firestoreConnect([
-    { collection: 'mycollections'}
-  ])
+  firestoreConnect(props => {
+    return [
+    { collection: 'mycollections',
+    where: [['userId', '==', props.userId ? props.userId: null]]
+  }
+
+  ]})
 )(MyCollection);

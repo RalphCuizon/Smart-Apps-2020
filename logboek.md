@@ -20,3 +20,5 @@
 |27/08/2021| 5 Uren|Login gelinkt aan de firebase|
 |27/08/2021| 1 Uren|Route Guarding|
 |27/08/2021| 1 Uren|Registratie Gebruiker + database|
+|27/08/2021| 3 Uren|firestoreconnect where, om alleen de collections tonen van de user|
+|27/08/2021| 4 Uren|update firestore plus mycollection details frontend|

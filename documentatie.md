@@ -7,3 +7,5 @@
 |Login gelinkt aan de firebase|https://www.youtube.com/watch?v=TGQi4LgoRRw&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3&index=21|
 |Route Guarding|https://www.youtube.com/watch?v=xY_27UI2W5U&t=127s|
 |Registratie Gebruiker + database|https://www.youtube.com/watch?v=4s1Q-1gUYn8&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3&index=28|
+|firestoreconnect where, om alleen de collections tonen van de user|https://stackoverflow.com/questions/54442404/how-to-pass-auth-or-profile-object-to-firestoreconnect-with-react-redux-fi|
+|update firestore plus mycollection details frontend|https://www.codegrepper.com/code-examples/javascript/react+firebase+set+or+add+or+update+data+to+firestore|

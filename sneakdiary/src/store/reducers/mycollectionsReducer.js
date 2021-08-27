@@ -14,6 +14,12 @@ const mycollectionsReducer = (state = initState, action) => {
     case 'CREATE_MYCOLLECTIONS_ERROR':
       console.log('created my collection error', action.err);
       return state;
+      case 'UPDATE_MYCOLLECTIONS':
+        console.log('update my collection', action.mycollection);
+        return state;
+      case 'UPDATE_MYCOLLECTIONS_ERROR':
+        console.log('update my collection error', action.err);
+        return state;
     default:
       return state;
   }

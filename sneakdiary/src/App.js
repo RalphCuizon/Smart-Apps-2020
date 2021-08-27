@@ -7,7 +7,9 @@ import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import CreateMyCollections from "./components/mycollections/CreateMyCollections"
 import MyCollectionsDetails from "./components/mycollections/MyCollectionsDetails"
-import './index.css'
+import AuthorizedRouteSignedOut from './components/auth/AuthorizedRouteSignedOut'
+import { connect } from "react-redux";
+
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/releases/:id" component={ReleasesDetails} />
 
-          <Route path="/mycollections" component={MyCollection} />
+          <AuthorizedRouteSignedOut path="/mycollections" component={MyCollection}/>
           <Route path="/mycollection/:id" component={MyCollectionsDetails} />
           <Route path="/createcollection" component={CreateMyCollections} />
 
@@ -28,7 +30,13 @@ function App() {
         </Switch>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+      auth: state.firebase.auth
+  }
+}
+
+export default connect(mapStateToProps)(App)

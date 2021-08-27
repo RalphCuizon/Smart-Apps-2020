@@ -4,25 +4,27 @@ import { connect } from "react-redux"
 import { createMyCollections } from "../../store/actions/myCollectionsActions"
 
 class CreateMyCollections extends Component {
+  
   state = {
     sneakerName: "",
     dateOfPurchase: "",
     purchasePrice: 0,
     size: 0,
     sellingPrice: 0,
-    image: "",
-    soldPrice: "",
-  };
+    soldPrice: ""
+  }
   handleChange = (e) => {
     this.setState({
       [e.target.id]: e.target.value,
-    });
-  };
+    })
+  }
   handleSubmit = (e) => {
-    e.preventDefault();
-    this.props.createMyCollections(this.state);
-  };
+    e.preventDefault()
+    this.props.createMyCollections(this.state)
+    this.props.history.push('/mycollections')
+  }
   render() {
+
     return (
       <div className="container">
         <form className="white" onSubmit={this.handleSubmit}>
@@ -72,6 +74,12 @@ class CreateMyCollections extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  console.log(state)
+  return {
+    auth : state.firebase.auth
+  }
+}
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -81,6 +89,6 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
-)(CreateMyCollections);
+)(CreateMyCollections)
