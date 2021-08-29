@@ -11,3 +11,4 @@
 |update firestore plus mycollection details frontend|https://www.codegrepper.com/code-examples/javascript/react+firebase+set+or+add+or+update+data+to+firestore|
 |MaterializeCSS Library voor de frontend|https://materializecss.com/|
 |Verwijderderen van een item(db) bij mycollection op de mycollection details frontend|https://www.codegrepper.com/code-examples/javascript/firebase+react+native+delete+document|
+|SideNav, Navbar responsive|https://materializecss.com/sidenav.html#!,https://materializecss.com/navbar.html,https://medium.com/@elhamza90/react-materialize-sidenav-in-4-steps-7365f6176b09|
