@@ -3,7 +3,6 @@ import { connect} from 'react-redux'
 import React, { Component } from 'react'
 import { firestoreConnect} from 'react-redux-firebase'
 import { compose } from 'redux'
-import { Redirect } from 'react-router-dom'
 
 class MyCollection extends Component {
   render(){
@@ -17,10 +16,10 @@ class MyCollection extends Component {
         <MyCollectionsList mycollections={mycollections}/>
         <div>
           <a
-            class="btn-floating btn-large waves-effect waves-light light-blue lighten-2"
+            className="btn-floating btn-large waves-effect waves-light light-blue lighten-2"
             href="/createcollection"
           >
-            <i class="material-icons">add</i>
+            <i className="material-icons">add</i>
           </a>
         </div>
       </div>
@@ -30,8 +29,6 @@ class MyCollection extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
-  console.log(state.firebase.auth.uid)
   return {
       mycollections: state.firestore.ordered.mycollections,
       //auth: state.firebase.auth,

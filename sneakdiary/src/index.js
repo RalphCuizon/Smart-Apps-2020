@@ -11,6 +11,8 @@ import { reduxFirestore, getFirestore, createFirestoreInstance } from "redux-fir
 import { reactReduxFirebase, ReactReduxFirebaseProvider, getFirebase } from "react-redux-firebase";
 import fbConfig from "./config/fbConfig";
 import firebase from 'firebase/app'
+import swDev from "./sw/swDev";
+
 
 const rrfConfig = { 
   userProfile: 'mycollections',
@@ -51,3 +53,4 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
+swDev();

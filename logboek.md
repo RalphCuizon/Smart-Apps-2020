@@ -24,3 +24,4 @@
 |27/08/2021| 4 Uren|update firestore plus mycollection details frontend|
 |28/08/2021| 5 Uren|Verwijder-functie + responsive desktop-mobile|
 |29/08/2021| 2 Uren|SideNav, Navbar responsive|
+|29/08/2021| 6 Uren| deel1 PWA: cache om offline content te krijgen|

@@ -12,3 +12,4 @@
 |MaterializeCSS Library voor de frontend|https://materializecss.com/|
 |Verwijderderen van een item(db) bij mycollection op de mycollection details frontend|https://www.codegrepper.com/code-examples/javascript/firebase+react+native+delete+document|
 |SideNav, Navbar responsive|https://materializecss.com/sidenav.html#!,https://materializecss.com/navbar.html,https://medium.com/@elhamza90/react-materialize-sidenav-in-4-steps-7365f6176b09|
+|deel1 PWA: cache om offline content te krijgen|https://www.youtube.com/watch?v=4XT23X0Fjfk&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7&index=1, https://blog.logrocket.com/creating-a-lists-pwa-with-react-and-firebase/, https://www.youtube.com/watch?v=PPbzwh5vdIA&list=PL8p2I9GklV46NFHdQMFBjXvxwVqtJpa2N&index=6|

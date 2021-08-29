@@ -19,7 +19,7 @@ class Sidebar extends Component {
                   <li><NavLink className="sidenav-close" to="/signup">Sign Up</NavLink></li>                  
             <li><NavLink className="sidenav-close" to="/signin">Login</NavLink></li>
          </ul>
-         <a href="#" data-target="slide-out" class="sidenav-trigger show-on-small"><i class="material-icons">menu</i></a>
+         <a href="#" data-target="slide-out" className="sidenav-trigger show-on-small"><i class="material-icons">menu</i></a>
             </div>
         );
     }
