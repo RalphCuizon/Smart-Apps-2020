@@ -25,3 +25,4 @@
 |28/08/2021| 5 Uren|Verwijder-functie + responsive desktop-mobile|
 |29/08/2021| 2 Uren|SideNav, Navbar responsive|
 |29/08/2021| 6 Uren| deel1 PWA: cache om offline content te krijgen|
+|29/08/2021| 5 Uren| deel2 PWA: firebase db in cache om oofline content te krijgen|

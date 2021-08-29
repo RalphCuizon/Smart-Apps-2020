@@ -1,6 +1,6 @@
 export default function swDev() {
     let swUrl= `/sw.js`
-    navigator.serviceWorker.register('/sw.js').then((response) =>{
+    navigator.serviceWorker.register(swUrl).then((response) =>{
         console.warn("response", response)
     })
 }
