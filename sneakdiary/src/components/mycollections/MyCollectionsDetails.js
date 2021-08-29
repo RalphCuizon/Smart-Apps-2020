@@ -5,7 +5,7 @@ import { compose } from "redux"
 import { Redirect } from 'react-router-dom'
 import React, { Component } from "react"
 import moment from "moment"
-import { updateMyCollections } from "../../store/actions/myCollectionsActions"
+import { deleteMyCollections, updateMyCollections } from "../../store/actions/myCollectionsActions"
 
 
 
@@ -16,12 +16,20 @@ class MyCollectionsDetails extends Component {
     this.setState({
       [e.target.id]: e.target.value,
     })
+
   }
   handleSubmit = (e) => {
     const { id } = this.props
     e.preventDefault()
-    this.props.updateMyCollections(this.state,id)
     console.log(this.state)
+    this.props.updateMyCollections(this.state,id)
+    this.props.history.push('/mycollections')
+  }
+  handleDelete = (e) => {
+    const { id } = this.props
+    e.preventDefault()
+    this.props.deleteMyCollections(this.state,id)
+        this.props.history.push('/mycollections')
   }
   render() {
     const { mycollection, auth } = this.props
@@ -37,7 +45,7 @@ class MyCollectionsDetails extends Component {
             <form className="white" onSubmit={this.handleSubmit}>
           <div className="input-field">
             <input type="text" id="sneakerName"  placeholder={mycollection.sneakerName} onChange={this.handleChange} />
-            <label class="active" htmlFor="sneakerName" >Sneaker Name</label>
+            <label className="active" htmlFor="sneakerName" >Sneaker Name</label>
           </div>
           <div className="input-field">
             <input
@@ -46,7 +54,7 @@ class MyCollectionsDetails extends Component {
               onChange={this.handleChange}
               defaultDate={mycollection.dateOfPurchase}
             />
-            <label class="active" htmlFor="dateOfPurchase">Date of Purchase {moment(mycollection.dateOfPurchase).format('L')}</label>
+            <label className="active" htmlFor="dateOfPurchase">Date of Purchase {moment(mycollection.dateOfPurchase).format('L')}</label>
           </div>
           <div className="input-field">
             <input
@@ -75,12 +83,13 @@ class MyCollectionsDetails extends Component {
             <label class="active" htmlFor="soldPrice">(if sold) Sold Price</label>
           </div>
           <div className="input-field">
-            <button className="btn light-blue lighten-2 ">Update</button>
+            <button  className="btn light-blue lighten-2 ">Update</button>
           </div>
+         
         </form>
           </div>
-          <div class="card-action">
-            <a href="#">Delete</a>
+          <div className="input-filed">
+            <button  onClick={this.handleDelete} className="btn light-blue lighten-2 ">Delete</button>
           </div>
       </div>
     </div>
@@ -97,7 +106,7 @@ class MyCollectionsDetails extends Component {
           
         )
     }
-    console.log(this.props);
+
  
 }
 }
@@ -116,8 +125,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateMyCollections: (mycollection, id) =>
-      dispatch(updateMyCollections(mycollection, id)),
+    deleteMyCollections: (mycollection, id) => dispatch(deleteMyCollections(mycollection, id)),
+    updateMyCollections: (mycollection, id) => dispatch(updateMyCollections(mycollection, id)),
+
   };
 };
 

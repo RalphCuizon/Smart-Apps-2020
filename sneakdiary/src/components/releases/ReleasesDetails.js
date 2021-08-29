@@ -3,9 +3,9 @@ const ReleasesDetails = (props) => {
   return (
     <div className="container section releases-details">
       <div className="card horizontal z-depth-0">
-        <div class="card-image">
+        <div className="card-image">
           <img
-            class="responsive-img"
+            className="responsive-img"
             src="https://upload.wikimedia.org/wikipedia/commons/2/25/Icon-round-Question_mark.jpg"
             alt="sneaker"
           ></img>

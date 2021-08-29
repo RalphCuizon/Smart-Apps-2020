@@ -6,6 +6,8 @@ import { compose } from 'redux'
 import { connect } from 'react-redux'
 
 class Home extends Component {
+
+  
 render(){
   //console.log(this.props);
   const { releases } = this.props;

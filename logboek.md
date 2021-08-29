@@ -22,3 +22,4 @@
 |27/08/2021| 1 Uren|Registratie Gebruiker + database|
 |27/08/2021| 3 Uren|firestoreconnect where, om alleen de collections tonen van de user|
 |27/08/2021| 4 Uren|update firestore plus mycollection details frontend|
+|28/08/2021| 5 Uren|Verwijder-functie + responsive desktop-mobile|
