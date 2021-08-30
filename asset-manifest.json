@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Smart-Apps-2020/static/css/main.1eb5cab1.chunk.css",
+    "main.js": "/Smart-Apps-2020/static/js/main.1adebec6.chunk.js",
+    "main.js.map": "/Smart-Apps-2020/static/js/main.1adebec6.chunk.js.map",
+    "runtime-main.js": "/Smart-Apps-2020/static/js/runtime-main.c875dfd4.js",
+    "runtime-main.js.map": "/Smart-Apps-2020/static/js/runtime-main.c875dfd4.js.map",
+    "static/css/2.f4ae4707.chunk.css": "/Smart-Apps-2020/static/css/2.f4ae4707.chunk.css",
+    "static/js/2.f92d9e1c.chunk.js": "/Smart-Apps-2020/static/js/2.f92d9e1c.chunk.js",
+    "static/js/2.f92d9e1c.chunk.js.map": "/Smart-Apps-2020/static/js/2.f92d9e1c.chunk.js.map",
+    "static/js/3.8a6fb95f.chunk.js": "/Smart-Apps-2020/static/js/3.8a6fb95f.chunk.js",
+    "static/js/3.8a6fb95f.chunk.js.map": "/Smart-Apps-2020/static/js/3.8a6fb95f.chunk.js.map",
+    "index.html": "/Smart-Apps-2020/index.html",
+    "static/css/2.f4ae4707.chunk.css.map": "/Smart-Apps-2020/static/css/2.f4ae4707.chunk.css.map",
+    "static/css/main.1eb5cab1.chunk.css.map": "/Smart-Apps-2020/static/css/main.1eb5cab1.chunk.css.map",
+    "static/js/2.f92d9e1c.chunk.js.LICENSE.txt": "/Smart-Apps-2020/static/js/2.f92d9e1c.chunk.js.LICENSE.txt",
+    "static/media/homewallpaper.ddbb4951.jpg": "/Smart-Apps-2020/static/media/homewallpaper.ddbb4951.jpg",
+    "static/media/sneaker.902728dd.png": "/Smart-Apps-2020/static/media/sneaker.902728dd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c875dfd4.js",
+    "static/css/2.f4ae4707.chunk.css",
+    "static/js/2.f92d9e1c.chunk.js",
+    "static/css/main.1eb5cab1.chunk.css",
+    "static/js/main.1adebec6.chunk.js"
+  ]
+}
