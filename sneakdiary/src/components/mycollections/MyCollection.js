@@ -6,8 +6,9 @@ import { compose } from 'redux'
 
 class MyCollection extends Component {
   render(){
-  //console.log(this.props);
-  const { mycollections } = this.props;
+    const { mycollections } = this.props;
+
+  
 
  // if (!auth.uid) return <Redirect to='/SignIn' />
   return (

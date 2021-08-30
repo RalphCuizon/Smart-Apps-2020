@@ -1,19 +1,21 @@
 import moment from 'moment'
+import sneaker from "../../img/sneaker.png"
 
 const MyCollectionsSummary = ({mycollection}) => {
   return (
+    <div>
     <div className="col s12 m6">
-      <div className="card horizontal mycollections-summary">
+      <div className="card small horizontal mycollections-summary">
         <div className="card-image">
           <img
             className="responsive-img"
-            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Icon-round-Question_mark.jpg"
+            src={sneaker}
             alt="sneaker"
           ></img>
         </div>
         <div class="card-stacked">
           <div className="card-content blue-grey-text text-darken-3">
-            <span className="card-title">{mycollection.sneakerName}</span>
+            <h6><b>{mycollection.sneakerName}</b></h6>
             <p><b>Size</b>: {mycollection.size}</p>
             <p><b>Date of Purchase</b>: {moment(mycollection.dateOfPurchase).format('L')}</p>
             <p><b>Purchase Price</b>: {mycollection.purchasePrice} €</p>
@@ -22,6 +24,7 @@ const MyCollectionsSummary = ({mycollection}) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

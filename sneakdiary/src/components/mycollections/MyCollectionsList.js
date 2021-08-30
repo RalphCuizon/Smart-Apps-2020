@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 const MyCollectionsList = ({mycollections}) => { 
   return (
-    <div className="releases-list section">
+    
+    <div className="mycollections-list section">
      { mycollections && mycollections.map(mycollection => {
         return (
           <Link to={'/mycollection/' + mycollection.id} key={mycollection.id}>

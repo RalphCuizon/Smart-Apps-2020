@@ -1,5 +1,5 @@
-const staticCacheName = "site-static-v9";
-const dynamicCacheName = "site-dynamic-v10";
+/*const staticCacheName = "site-static-v10";
+const dynamicCacheName = "site-dynamic-v11";
 const assets = [
   "/",
   "https://fonts.googleapis.com/icon?family=Material+Icons",
@@ -72,3 +72,4 @@ self.addEventListener("fetch", (event) => {
     );
     }
 });
+*/

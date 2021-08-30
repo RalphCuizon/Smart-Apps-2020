@@ -30,7 +30,7 @@ class CreateMyCollections extends Component {
         <form className="white" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Create One Collection</h5>
           <div className="input-field">
-            <input type="text" id="sneakerName" onChange={this.handleChange} />
+            <input type="text" id="sneakerName"className="validate"  onChange={this.handleChange} />
             <label htmlFor="sneakerName">Sneaker Name</label>
           </div>
           <div className="input-field">
@@ -38,6 +38,7 @@ class CreateMyCollections extends Component {
               type="date"
               id="dateOfPurchase"
               onChange={this.handleChange}
+              className="validate"
             />
             <label htmlFor="dateOfPurchase">Date of Purchase</label>
           </div>
@@ -46,11 +47,12 @@ class CreateMyCollections extends Component {
               type="number"
               id="purchasePrice"
               onChange={this.handleChange}
+              className="validate"
             />
             <label htmlFor="purchasePrice">Purchase Price</label>
           </div>
           <div className="input-field">
-            <input type="number" id="size" onChange={this.handleChange} />
+            <input type="number" id="size" className="validate" onChange={this.handleChange} />
             <label htmlFor="size">Size</label>
           </div>
           <div className="input-field">
@@ -58,11 +60,12 @@ class CreateMyCollections extends Component {
               type="number"
               id="sellingPrice"
               onChange={this.handleChange}
+              className="validate"
             />
             <label htmlFor="sellingPrice">Selling Price</label>
           </div>
           <div className="input-field">
-            <input type="number" id="soldPrice" onChange={this.handleChange} />
+            <input type="number" id="soldPrice" className="validate" onChange={this.handleChange} />
             <label htmlFor="soldPrice">(if sold) Sold Price</label>
           </div>
           <div className="input-field">
@@ -75,7 +78,6 @@ class CreateMyCollections extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
   return {
     auth : state.firebase.auth
   }
